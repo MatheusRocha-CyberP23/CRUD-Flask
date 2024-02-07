@@ -96,7 +96,7 @@ def create_transaction():
         return jsonify(error=f"Error! Payer with id '{data['payer_id']}' or payee with id '{data['payee_id']}' was not found!", status='404')
 
     if payer['balance'] < data['amount']:
-        return jsonify(status='400', error=f'Insufficient balance for payer with id {data['payer_id']}')
+        return jsonify(status='400', error=f"Insufficient balance for payer with id {data['payer_id']}")
 
     payer['balance']  -= data['amount']
     payee['balance']  += data['amount']    
