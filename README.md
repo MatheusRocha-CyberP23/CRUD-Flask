@@ -40,7 +40,7 @@ Este projeto é uma aplicação web simples que realiza operações de CRUD (Cre
 5. **Deletar Usuário**: Deleta um usuário específico com base no ID fornecido. A rota é `/user/delete/<id>` e o método é DELETE. Sem payload.
 
 6. **Criar Transação**: Cria uma transação entre dois usuários. A rota é `/transaction` e o método é POST.
-    - Payload (Todos campos são obrigatórios)::
+    - Payload (Todos campos são obrigatórios):
         ```json
         {
             "payer_id": <id do usuário que envia>,
