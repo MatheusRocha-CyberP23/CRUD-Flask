@@ -21,7 +21,7 @@ class NewUserSchema(Schema):
     full_name = fields.String(required=True, validate=validate.Length(min=2) , error_messages={'required': "Required field", 'invalid': "Invalid field"})
     cpf = fields.String(required=True, validate=validate.Length(min=11,max=11), error_messages={'required': "Required field", 'invalid': "Invalid field"})
     email = fields.Email(required=True, error_messages={'required': "Required field", 'invalid': "Invalid field"})
-    balance = fields.Float(required=False, error_messages={'invalid': "Invalid field"})
+    balance = fields.Float(required=True, error_messages={'invalid': "Invalid field"})
 
 class UpdateUserSchema(Schema):
     id = fields.Integer(required=True, error_messages={'required': "Required field", 'invalid': "Invalid field"})
