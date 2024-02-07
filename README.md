@@ -26,7 +26,7 @@ Este projeto é uma aplicação web simples que realiza operações de CRUD (Cre
 3. **Obter Usuário por ID**: Retorna um usuário específico com base no ID fornecido. A rota é `/user/request/<id>` e o método é GET. Sem payload.
 
 4. **Atualizar Usuário**: Atualiza os detalhes de um usuário existente. A rota é `/user/update` e o método é PUT.
-    - Payload (Adicione apenas o campo que ira ser atualizado, com exceção do id que é obrigatório):
+    - Payload (Adicione apenas os campos que irão ser atualizados, com exceção do id que é obrigatório):
         ```json
         {
             "id": <id>,
